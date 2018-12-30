@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # understrap-child
 Basic Child Theme for UnderStrap Theme Framework: https://github.com/understrap/understrap
 
@@ -13,7 +12,7 @@ Understrap Child Theme uses the Enqueue method to load and sort the CSS file the
 1. Install the parent theme UnderStrap first: `https://github.com/understrap/understrap`
    - IMPORTANT: If you download UnderStrap from GitHub make sure you rename the "understrap-master.zip" file to "understrap.zip" or you might have problems using this child theme!
 1. Upload the understrap-child folder to your wp-content/themes directory
-1. Go into your WP admin backend 
+1. Go into your WP admin backend
 1. Go to "Appearance -> Themes"
 1. Activate the UnderStrap Child theme
 
@@ -59,6 +58,6 @@ Or, to run with Browser-Sync:
 
 [1] Visit [https://browsersync.io/](https://browsersync.io/) for more information on Browser Sync
 =======
+
 # ssy
 Smith Street Yoga Child Theme
->>>>>>> 81120db441d5bbd9e6bc96188881e89d39647aba
