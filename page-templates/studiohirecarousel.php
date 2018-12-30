@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Fluid Width Page
+ * Template Name: Use this page with the Studio
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -16,6 +16,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div class="wrapper" id="full-width-page-wrapper">
+	<!-- Carousel -->
+	<section class="containter hero-carousel">
+		<?php get_template_part( 'loop-templates/content', 'carousel' ); ?>
+	</section>
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 

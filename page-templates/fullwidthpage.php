@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Fluid Width Page
+ * Template Name: Full Width Page
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
