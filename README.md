@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # understrap-child
 Basic Child Theme for UnderStrap Theme Framework: https://github.com/understrap/understrap
 
@@ -57,3 +58,7 @@ Or, to run with Browser-Sync:
 - then run: `$ gulp watch-bs`
 
 [1] Visit [https://browsersync.io/](https://browsersync.io/) for more information on Browser Sync
+=======
+# ssy
+Smith Street Yoga Child Theme
+>>>>>>> 81120db441d5bbd9e6bc96188881e89d39647aba
