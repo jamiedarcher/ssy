@@ -1,0 +1,12 @@
+@mixin gold-gradient($primary, $secondary){
+  background-color: $primary; // Old browsers
+  @include filter-gradient($primary, $secondary, horizontal); // IE6-9 fallback on horizontal gradient
+  @include background-image(linear-gradient(left top, $primary 0%,$secondary 100%));
+
+  &:hover, &:active{
+    background-color: $primary; // Old browsers
+    @include filter-gradient($primary, $secondary, horizontal); // IE6-9 fallback on horizontal gradient
+    @include background-image(linear-gradient(left top, $primary 0%,$secondary 100%));
+
+    }
+}

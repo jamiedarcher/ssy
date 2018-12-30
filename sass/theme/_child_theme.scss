@@ -1,0 +1,448 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+// SCSS Syntax http://sass-lang.com/documentation/file.SASS_REFERENCE.html#css_extensions
+
+
+
+body{
+  font-family: $font-family-sans-serif;
+}
+
+.wrapper {
+    padding: 0px 0;
+}
+
+//* Title and Font Overides  *//
+
+@media screen and (max-width: 600px) {
+  h1.entry-title{font:italic 2em 'lora', serif;}
+  h2{font:light 1.5em 'open-sans',san-serif;}
+}
+@media screen and (min-width: 600px) and (max-width: 1600px) {
+  h1.entry-title{font:italic 5em 'lora', serif;}
+  h2{font:light 2.5em 'open-sans',san-serif;}
+}
+
+//CAROUSEL OVERIDES
+
+.hero-carousel{
+  max-width: 100vw;
+  margin: 0 auto;
+  .carousel{
+    .carousel-inner{
+      .carousel-item{
+        margin: 0 auto;
+        max-height: 85vh;
+        .carousel-caption{
+          text-align: left;
+          background-color: rgba($secondary-500, 0.4);
+          bottom: 50px;
+        }
+        img{
+          position:relative;
+          width:100vw;
+          top:-150px;
+        }
+      }
+    }
+  }
+}
+
+//NAVIGATION
+
+.bg-menu {
+  background-color:$brand-primary;
+}
+
+#wrapper-navbar, .navbar{
+  padding:0;
+  max-height:67px;
+  z-index: 99999;
+  .navbar-brand{
+     padding: 0;
+     margin: 0;
+     max-height: 67px;
+     img {
+       max-width: 182px;
+     }
+  }
+}
+
+// Gold links against a light gold background
+.navbar-gold {
+  .navbar-brand {
+    color: $navbar-dark-active-color;
+
+    @include hover-focus {
+      color: $navbar-gold-active-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-gold-color;
+      letter-spacing: 0.5px;
+      font-family: Rubik;
+      text-transform: uppercase;
+      font-weight: 500;
+      @include hover-focus {
+        color: $navbar-gold-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-gold-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-gold-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-gold-color;
+    border-color: $navbar-gold-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-gold-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-gold-color;
+    a {
+      color: $navbar-gold-active-color;
+
+      @include hover-focus {
+        color: $navbar-gold-active-color;
+      }
+    }
+  }
+}
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
+//MOBILE NAV STYLING
+
+.navbar-toggler{
+  margin-right: 10px;
+  background: #4a1a00;
+  &:focus{
+  outline: none;
+  }
+}
+
+.navbar-toggler.collapsed{
+  background: none;
+  outline: none;
+}
+
+
+.navbar-nav{
+  background:#f9cebc;
+  box-shadow: 0px 5px 18px 2px rgba(191,191,191,0.41);
+  .menu-item{
+    a{
+    padding-left: 20px;
+    }
+    .dropdown-menu.show{
+      li{
+        padding-left: 0px;
+      }
+    }
+  }
+}
+
+.dropdown-menu{
+  background:#fbe1b9;
+  border-radius: 0px;
+  border: none;
+}
+
+//ARCHIVE STYLING
+//Teachers Archive
+
+.post-type-archive-teacher_bio .page-header{
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .post-type-archive-teacher_bio{
+    .content-grid{
+      display:flex;
+      flex-direction:column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      article.teacher_bio{
+        max-width:100%;
+        margin:5px;
+        header.bio-header{
+          display:block;
+          min-height: 300px;
+          min-width: 300px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-color: #666;
+          position: relative;
+          h2.bio-title{
+            font-family:Open Sans ,san-serif;
+            color:white;
+            bottom: 0px;
+            left: 10px;
+            position: absolute;
+          }
+          .bio-link{
+
+          }
+        }
+        .entry-content{
+          margin-top:5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .post-type-archive-teacher_bio{
+    .content-grid{
+      display:flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      article.teacher_bio{
+        width:49%;
+        margin-right:2px;
+        header.bio-header{
+          display:block;
+          min-height: 300px;
+          min-width: 300px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-color: #666;
+          position: relative;
+          h2.bio-title{
+            font-family:Open Sans ,san-serif;
+            color:white;
+            bottom: 0px;
+            left: 10px;
+            position: absolute;
+          }
+        }
+        .entry-content{
+          margin-top:5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post-type-archive-teacher_bio{
+    .content-grid{
+      display:flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      article.teacher_bio{
+        width:33%;
+        margin-right:2px;
+        header.bio-header{
+          display:block;
+          min-height: 300px;
+          min-width: 300px;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-color: #666;
+          position: relative;
+          h2.bio-title{
+            font-family:Open Sans ,san-serif;
+            color:white;
+            bottom: 0px;
+            left: 10px;
+            position: absolute;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+//TEACHER PAGE STYLING
+
+
+@media screen and (min-width: 320px) {
+  .single-teacher_bio{
+    header.bio-header{
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+//Basic Page Styling
+
+//POST STYLING
+
+//Generic blog style
+article.post{
+  margin: 20px 0 0 0;
+  .entry-header{
+    font-size:0.8em !important;
+    margin-bottom:5px;
+    .entry-meta{
+      .updated{display: none;}
+    }
+  }
+  .entry-content{
+    margin:16px 0 0;
+  }
+  .entry-footer{
+    font-size: 0.8em;
+    .tags-links{
+      background-color: $primary-900;
+    }
+  }
+}
+
+
+
+//PAGE STYLING
+
+//Basic Page Styling
+
+article.page{
+  margin: 20px 0 0 0;
+  .entry-header{
+    postion:relative;
+    img.wp-post-image{
+      min-width:100vw;
+    }
+    .entry-title{
+
+    }
+    .entry-meta{
+      font-size:0.4 rem !important;
+
+    }
+
+  }
+  .entry-content{
+    margin:16px 0 0;
+  }
+}
+
+//Page Plus Sideabr
+
+
+//Page Without Sidebar
+
+//Page Feature Image and Title
+
+article.page{
+
+}
+
+//** MINDBODY WIDGET STYLES**//
+//Classes
+
+.healcode {
+  .class_show{
+    margin:10px 0 20px;
+      h1, .class_name{
+        font: light 3.5em 'Open Sans', sansa-serif !important;
+      }
+
+  }
+}
+
+.healcode {
+  .class_list{
+    margin:10px 0 20px;
+      .class_name{
+        font: light 3.5em 'Open Sans', sansa-serif !important;
+      }
+  }
+  .healcode-title-text{}
+}
+
+
+div.healcode .class_list .class_offered_link a, div.healcode .class_list .trainer_teaches_link a, div.healcode .trainer_list .class_offered_link a, div.healcode .trainer_list .trainer_teaches_link a{
+  font: light 3.5em 'Open Sans', sansa-serif !important;
+  border-radius: 0px;
+}
+
+//BLOCK STYLING
+
+//SIDEBAR STYLING
+
+#right-sidebar, #left-sidebar{
+  margin:20px 0 10px;
+}
+
+//WIDGET STYLING
+// Lists
+.widget{
+  margin-bottom:20px;
+  .widget-title{
+
+  }
+  ul{
+    list-style-type: none;
+    margin:0px 0px 20px;
+    padding:0px;
+    li{}
+  }
+}
+
+//* BUTTON STYLING *//
+.btn-secondary {
+    color: #fff;
+    background-color: $secondary;
+    border-color: $secondary;
+    &:hover{
+      background-color: $secondary-200;
+    }
+}
+
+//* FOOTER STYLING *//
+
+//* Gutenberg Styles *//
+.entry-content .alignfull, .carousel-item.alignfull, .entry-header.alignfull{
+    margin-left  : calc( -100vw / 2 + 100% / 2 );
+    margin-right : calc( -100vw / 2 + 100% / 2 );
+    max-width    : 100vw;
+}
+
+.entry-content .alignwide, .carousel-item.alignwide{
+    margin-left  : -100px;
+    margin-right : -100px;
+    max-width    : 1024px;
+}
+
+// Column Blocks
+
+.wp-block-columns.has-2-columns{
+  .wp-block-column{
+
+  }
+}

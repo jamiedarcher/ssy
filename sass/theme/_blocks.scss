@@ -1,0 +1,62 @@
+/** Support for Wide Align Block **/
+@media only screen and (min-width: 768px) {
+
+  .alignfull {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: auto;
+    max-width: 1000%;
+  }
+
+  .alignwide {
+    margin-left: calc(25% - 25vw);
+    margin-right: calc(25% - 25vw);
+    width: auto;
+    max-width: 1000%;
+  }
+
+  .alignwide img,
+  .alignfull img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+/** BlockQuote Support **/
+blockquote {
+	background: transparent;
+	margin: 0 0 $base-margin;
+	@include font-sizes( 18px, 19px, 22px );
+	font-style: italic;
+	padding: 0;
+	text-align: center;
+
+	cite {
+		display: block;
+		font-size: 18px;
+		margin-top: 17px;
+	}
+
+	p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	&.is-large.wp-block-quote {
+		@include font-sizes( 22px, 26px, 32px );
+		margin: 0 0 $base-margin;
+		padding: 0;
+
+		cite {
+			text-align: center;
+		}
+	}
+
+	&.wp-block-pullquote {
+		border-top: 2px solid $base-color;
+		border-bottom: 2px solid $base-color;
+		padding: $base-margin 0;
+	}
+}
+
+hr.wp-block-separator
