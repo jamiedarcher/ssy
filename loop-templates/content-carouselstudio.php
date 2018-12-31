@@ -1,6 +1,13 @@
 <?php
 $slides = array();
-$args = array( 'tag' => 'slide', 'nopaging'=>true, 'posts_per_page'=>5 );
+$args = array(
+  'tag' => 'studio',
+  'nopaging'=>true,
+  'posts_per_page'=>5,
+  'orderby'  => 'meta_value_num',
+	'meta_key' => 'order'
+);
+
 $slider_query = new WP_Query( $args );
 if ( $slider_query->have_posts() ) {
     while ( $slider_query->have_posts() ) {

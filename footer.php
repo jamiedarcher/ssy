@@ -16,7 +16,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
+<iframe src="https://snazzymaps.com/embed/118418" width="100%" height="300px" style="border:none;"></iframe>
+
 <div class="wrapper" id="wrapper-footer">
+
 
 	<div class="<?php echo esc_attr( $container ); ?>">
 
@@ -49,4 +52,3 @@ $container = get_theme_mod( 'understrap_container_type' );
 </body>
 
 </html>
-
