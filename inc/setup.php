@@ -52,13 +52,43 @@ if ( ! function_exists ( 'understrap_setup' ) ) {
 		 add_theme_support('editor-styles');
 		 add_theme_support( 'wp-block-styles' );
 		 add_theme_support( 'responsive-embeds' );
-		 add_editor_style( '/css/custom-editor-style.css' );
+		 add_editor_style( '/custom-editor-style.css' );
 		 add_theme_support( 'editor-color-palette', array(
-		    array(
-		        'name' => __( 'strong magenta', 'themeLangDomain' ),
-		        'slug' => 'strong-magenta',
-		        'color' => '#a156b4',
+			 array(
+					 'name' => __( 'theme primary', 'themeLangDomain' ),
+					 'slug' => 'theme-primary',
+					 'color' => '#f9cebc',
+			 ),
+			 array(
+					 'name' => __( 'theme secondary', 'themeLangDomain' ),
+					 'slug' => 'theme-secondary',
+					 'color' => '#996535',
+			 ),
+			 array(
+					 'name' => __( 'dark grey', 'themeLangDomain' ),
+					 'slug' => 'dark-gray',
+					 'color' => '#666',
+			 ),
+			 array(
+					 'name' => __( 'primary light', 'themeLangDomain' ),
+					 'slug' => 'primary-light',
+					 'color' => '#FBE1B9',
+			 ),
+				array(
+		        'name' => __( 'secondary light', 'themeLangDomain' ),
+		        'slug' => 'secondary-light',
+		        'color' => '#F2C49D',
 		    ),
+				array(
+						'name' => __( 'primary dark', 'themeLangDomain' ),
+						'slug' => 'primary-dark',
+						'color' => '#DE5A13',
+				),
+				 array(
+						 'name' => __( 'secondary dark', 'themeLangDomain' ),
+						 'slug' => 'secondary-dark',
+						 'color' => '#4A1A00',
+				 ),
 		    array(
 		        'name' => __( 'light grayish magenta', 'themeLangDomain' ),
 		        'slug' => 'light-grayish-magenta',
@@ -73,7 +103,7 @@ if ( ! function_exists ( 'understrap_setup' ) ) {
 		        'name' => __( 'very dark gray', 'themeLangDomain' ),
 		        'slug' => 'very-dark-gray',
 		        'color' => '#444',
-		    ),
+		    )
 		) );
 
 		add_theme_support( 'editor-font-sizes', array(
@@ -187,7 +217,7 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 	 * @return string
 	 */
 	function understrap_all_excerpts_get_more_link( $post_excerpt ) {
-		if ( ! is_admin() ) {
+		if ( ! is_admin() && ! is_page(array( 'studio-hire', 'home') ) ) {
 			$post_excerpt = $post_excerpt . ' <p><a class="btn btn-secondary understrap-read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __( 'Read More',
 			'understrap' ) . '</a></p>';
 		}

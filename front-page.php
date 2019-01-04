@@ -37,11 +37,11 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			<main class="site-main" id="main">
 
 
-
-
 				<?php while ( have_posts() ) : the_post(); ?>
 
+					<div class="col-md-8 offset-md-2">
 					<?php get_template_part( 'loop-templates/content', 'home' ); ?>
+					</div>
 
 				<?php endwhile; // end of the loop. ?>
 

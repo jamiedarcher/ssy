@@ -1,6 +1,6 @@
 {
   "browserSyncOptions" : {
-    "proxy": "localhost/smithstreetyoga",
+    "proxy": "localhost/ssy",
     "notify": true
   },
   "browserSyncWatchFiles" : [

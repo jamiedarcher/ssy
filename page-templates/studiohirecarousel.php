@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Use this page with the Studio
+ * Template Name: Studio Hire Template
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -18,7 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper" id="full-width-page-wrapper">
 	<!-- Carousel -->
 	<section class="containter hero-carousel">
-		<?php get_template_part( 'loop-templates/content', 'carousel' ); ?>
+		<?php get_template_part( 'loop-templates/content', 'carouselstudio' ); ?>
 	</section>
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">

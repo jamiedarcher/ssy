@@ -10771,6 +10771,48 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+.has-theme-primary-background-color {
+  background-color: #f9cebc; }
+
+.has-theme-secondary-background-color {
+  background-color: #996535; }
+
+.has-dark-gray-background-color {
+  background-color: #666; }
+
+.has-primary-light-background-color {
+  background-color: #FBE1B9; }
+
+.has-secondary-light-background-color {
+  background-color: #F2C49D; }
+
+.has-primary-dark-background-color {
+  background-color: #DE5A13; }
+
+.has-secondary-dark-background-color {
+  background-color: #4A1A00; }
+
+.has-theme-primary-color {
+  background-color: #f9cebc; }
+
+.has-theme-secondary-color {
+  background-color: #996535; }
+
+.has-dark-gray-color {
+  background-color: #666; }
+
+.has-primary-light-color {
+  background-color: #FBE1B9; }
+
+.has-secondary-light-color {
+  background-color: #F2C49D; }
+
+.has-primary-dark-color {
+  background-color: #DE5A13; }
+
+.has-secondary-dark-background-color {
+  background-color: #4A1A00; }
+
 /** Support for Wide Align Block **/
 @media only screen and (min-width: 768px) {
   .alignfull {
@@ -10814,8 +10856,9 @@ blockquote {
 .home .heading-center {
   text-align: center; }
 
+/** PRCING COLUMNS BLOCK **/
 .wp-block-columns.pricing {
-  margin-top: 20px; }
+  margin: 40px 0; }
   .wp-block-columns.pricing .wp-block-column {
     padding: 5px;
     border: 1px grey dashed;
@@ -10889,11 +10932,41 @@ blockquote {
           -ms-flex-pack: center;
               justify-content: center; } }
 
+/** MEDIA AND TEXT Blocks **/
+/** GALLERY Block **/
+.wp-block-gallery {
+  margin: 50px 0px; }
+
+.wp-block-button__link, .carousel-button {
+  background-color: #32373c;
+  border: none;
+  border-radius: 28px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: break-word; }
+
+.is-style-squared .wp-block-button__link {
+  border-radius: 4px; }
+
+.is-style-outline .wp-block-button__link {
+  background: 0 0;
+  border-radius: 4px;
+  border: 2px solid currentcolor; }
+
 body {
   font-family: "Rubik", sans-serif; }
 
 .wrapper {
-  padding: 0px 0; }
+  padding: 0px 0px; }
 
 .hentry .entry-content p.subtitle {
   font: normal 1em Lora, serif;
@@ -10928,7 +11001,8 @@ body {
       bottom: 50px; }
     .hero-carousel .carousel .carousel-inner .carousel-item img {
       position: relative;
-      width: 100vw; }
+      width: 100vw;
+      top: -75px; }
 
 .bg-menu {
   background-color: #f9cebc; }
@@ -11199,13 +11273,9 @@ div.healcode .class_list .class_offered_link a, div.healcode .class_list .traine
   max-width: 1024px; }
 
 .entry-content .alignfull.pricing {
-  margin-left: 0;
-  margin-right: 0;
   max-width: 100vw; }
 
 .entry-content .alignwide.pricing {
-  margin-left: 0px;
-  margin-right: 0px;
   max-width: 1024px; }
 
 #wrapper-footer {

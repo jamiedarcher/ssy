@@ -27,7 +27,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content">
-
+		
+		<?php
+			$link = get_field('cta_link');
+			if( $link ):
+			$link_url = $link['url'];
+			$link_title = $link['title'];
+			$link_target = $link['target'] ? $link['target'] : '_self';
+			?>
+			<a class="btn" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+		<?php endif; ?>
 		<?php the_content(); ?>
 
 		<?php
