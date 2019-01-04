@@ -27,7 +27,6 @@
 blockquote {
 	background: transparent;
 	margin: 0 0 $base-margin;
-	@include font-sizes( 18px, 19px, 22px );
 	font-style: italic;
 	padding: 0;
 	text-align: center;
@@ -43,7 +42,6 @@ blockquote {
 	}
 
 	&.is-large.wp-block-quote {
-		@include font-sizes( 22px, 26px, 32px );
 		margin: 0 0 $base-margin;
 		padding: 0;
 
@@ -53,10 +51,96 @@ blockquote {
 	}
 
 	&.wp-block-pullquote {
-		border-top: 2px solid $base-color;
-		border-bottom: 2px solid $base-color;
+		border-top: 2px solid $secondary;
+		border-bottom: 2px solid $secondary;
 		padding: $base-margin 0;
 	}
 }
 
-hr.wp-block-separator
+hr.wp-block-separator{}
+
+//headings
+
+.home{
+  .heading-center{
+    text-align: center;
+  }
+}
+
+//COLUMNS BLOCK
+
+.wp-block-columns.pricing{
+  margin-top: 20px;
+  .wp-block-column{
+    padding: 5px;
+    border: 1px grey dashed;
+    border-radius: 2px;
+    margin:10px;
+    h4{
+      font:800 0.8em 'Open Sans', san-serif;
+      text-transform:uppercase;
+      text-align: center;
+      margin-bottom:1em;
+      letter-spacing:0px;
+      background-color:$primary-700;
+      padding:10px 10px;
+      height: 40px;
+      vertical-align: middle;
+      border-radius: 5px;
+    }
+    h3{
+      font:100 1.8em 'Open Sans', san-serif;
+      text-transform:uppercase;
+      text-align: center;
+      margin-bottom:0.5em;
+      letter-spacing:0px;
+      color:$primary-700 ;
+    }
+    ul{
+      list-style-type: none;
+      text-align: center;
+      padding: 0px;
+      li{
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wp-block-columns.has-4-columns.pricing {
+    flex-flow: row wrap;
+    .wp-block-column{
+      flex-basis: 31%;
+      justify-content: center;
+    }
+    .wp-block-column:first-child {
+      flex-basis: 97%;
+    }
+
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .wp-block-columns.has-4-columns.pricing {
+    flex-flow: row wrap;
+    .wp-block-column{
+      flex-basis: 30%;
+      justify-content: center;
+    }
+    .wp-block-column:first-child {
+      flex-basis: 96%;
+    }
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wp-block-columns.has-4-columns.pricing {
+    flex-flow: row wrap;
+    .wp-block-column{
+      flex-basis: 100%;
+      justify-content: center;
+    }
+  }
+}

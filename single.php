@@ -19,14 +19,14 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-
+			<!-- Do the left sidebar check -->
+			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
 
-				<div class="col-md-8 offset-md-2">
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'loop-templates/content', 'teachersingle' ); ?>
+					<?php get_template_part( 'loop-templates/content', 'single' ); ?>
 
 						<?php understrap_post_nav(); ?>
 
@@ -38,10 +38,11 @@ $container   = get_theme_mod( 'understrap_container_type' );
 					?>
 
 				<?php endwhile; // end of the loop. ?>
-			</div>
+
 			</main><!-- #main -->
 
-
+		<!-- Do the right sidebar check -->
+		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 
 	</div><!-- .row -->
 
