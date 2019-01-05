@@ -225,6 +225,16 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 	}
 }
 
+//Add Page Slug Body Class
+function add_slug_body_class( $classes ) {
+global $post;
+if ( isset( $post ) ) {
+$classes[] = $post->post_type . '-' . $post->post_name;
+}
+return $classes;
+}
+add_filter( 'body_class', 'add_slug_body_class' );
+
 // Simply remove anything that looks like an archive title prefix ("Archive:", "Foo:", "Bar:").
 add_filter('get_the_archive_title', function ($title) {
     return preg_replace('/^\w+: /', '', $title);

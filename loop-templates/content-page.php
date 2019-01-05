@@ -11,14 +11,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
-	<header class="entry-header">
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<?php /* grab the url for the full size featured image */
+	$postCover = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+	?>
+	<?php
+		echo '<header class="entry-header alignfull" style="background-image:url('.$postCover[0].')">';
+	?>
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<div class="offset-container">
+	
+
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
 
 	<div class="entry-content">
 
@@ -38,5 +44,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php edit_post_link( __( 'Edit', 'understrap' ), '<span class="edit-link">', '</span>' ); ?>
 
 	</footer><!-- .entry-footer -->
-
+	</div>
 </article><!-- #post-## -->

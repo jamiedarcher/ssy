@@ -13,7 +13,7 @@ $slider_query = new WP_Query( $args );
 if ( $slider_query->have_posts() ) {
     while ( $slider_query->have_posts() ) {
         $slider_query->the_post();
-        $link = get_field('cta_link', $post_id);
+        $link = get_field('cta_link', $slider_query->id);
 
         if(has_post_thumbnail()){
             $temp = array();

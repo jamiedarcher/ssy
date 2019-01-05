@@ -10968,11 +10968,49 @@ body {
 .wrapper {
   padding: 0px 0px; }
 
-.hentry .entry-content p.subtitle {
-  font: normal 1em Lora, serif;
+a {
+  color: #4A1A00;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+
+a:hover {
+  color: #804C17;
+  text-decoration: underline; }
+
+a:visited {
+  color: #E77319; }
+
+h3 a, h4 a {
+  color: #F8BA5D; }
+
+.page h1.entry-title, .page h1.page-title, .single h1.entry-title, .single h1.page-title, .archive h1.entry-title, .archive h1.page-title {
+  font: 4em/1em Lora, serif;
+  color: #F8BA5D;
+  padding-bottom: 10px; }
+
+.page h3, .single h3, .archive h3 {
+  color: #F8BA5D; }
+
+.page h4, .single h4, .archive h4 {
+  color: #F8BA5D; }
+
+.page .entry-meta, .single .entry-meta, .archive .entry-meta {
+  font: bold 0.8em/1.2em Rubik, serif;
+  margin-bottom: 20px; }
+  .page .entry-meta .byline, .single .entry-meta .byline, .archive .entry-meta .byline {
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .page .entry-meta a, .single .entry-meta a, .archive .entry-meta a {
+    color: black; }
+    .page .entry-meta a .updated, .single .entry-meta a .updated, .archive .entry-meta a .updated {
+      display: none; }
+
+.hentry .entry-content p.subtitle, .hentry .entry-content h2, .hentry .entry-content h2 a {
+  font: bold italic 1.2em Lora, serif;
   font-style: italic;
   color: #000;
-  line-height: 1.2em; }
+  line-height: 1.6em; }
 
 .hentry .entry-content p, .hentry .entry-content ul, .hentry .entry-content ol, .hentry .entry-content dl {
   color: #996535; }
@@ -11090,129 +11128,141 @@ body {
   opacity: 0;
   left: -10000px; }
 
+.post-navigation {
+  padding: 20px 30px;
+  margin-top: 20px;
+  background-color: #FBE1B9;
+  border-radius: 8px 8px 0px 0px; }
+
 .post-type-archive-teacher_bio .page-header {
   margin-top: 20px; }
 
-@media screen and (max-width: 600px) {
-  .post-type-archive-teacher_bio .content-grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .post-type-archive-teacher_bio .content-grid article.teacher_bio {
-      max-width: 100%;
-      margin: 5px; }
-      .post-type-archive-teacher_bio .content-grid article.teacher_bio header.bio-header {
-        display: block;
-        min-height: 300px;
-        min-width: 300px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: #666;
-        position: relative; }
-        .post-type-archive-teacher_bio .content-grid article.teacher_bio header.bio-header h2.bio-title {
-          font-family: Open Sans ,san-serif;
-          color: white;
-          bottom: 0px;
-          left: 10px;
-          position: absolute; }
-      .post-type-archive-teacher_bio .content-grid article.teacher_bio .entry-content {
-        margin-top: 5px; } }
+.post-type-archive-teacher_bio .content-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .post-type-archive-teacher_bio .content-grid header.bio-header {
+    display: block;
+    min-height: 300px;
+    min-width: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #666;
+    position: relative; }
+    .post-type-archive-teacher_bio .content-grid header.bio-header h2.bio-title {
+      font-family: Lora, serif;
+      color: white;
+      bottom: 0px;
+      left: 10px;
+      position: absolute;
+      text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
+  .post-type-archive-teacher_bio .content-grid .entry-content {
+    margin-top: 1em; }
 
-@media screen and (max-width: 1024px) and (min-width: 600px) {
+@media screen and (max-width: 770px) {
+  .post-type-archive-teacher_bio .content-grid article.teacher_bio {
+    max-width: 100%;
+    margin: 5px; } }
+
+@media screen and (min-width: 771px) {
   .post-type-archive-teacher_bio .content-grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+            flex-direction: row; }
     .post-type-archive-teacher_bio .content-grid article.teacher_bio {
-      width: 49%;
-      margin-right: 2px; }
-      .post-type-archive-teacher_bio .content-grid article.teacher_bio header.bio-header {
-        display: block;
-        min-height: 300px;
-        min-width: 300px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: #666;
-        position: relative; }
-        .post-type-archive-teacher_bio .content-grid article.teacher_bio header.bio-header h2.bio-title {
-          font-family: Open Sans ,san-serif;
-          color: white;
-          bottom: 0px;
-          left: 10px;
-          position: absolute; }
-      .post-type-archive-teacher_bio .content-grid article.teacher_bio .entry-content {
-        margin-top: 5px; } }
+      width: 48%;
+      margin-right: 2px; } }
 
 @media screen and (min-width: 1024px) {
   .post-type-archive-teacher_bio .content-grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
     .post-type-archive-teacher_bio .content-grid article.teacher_bio {
       width: 32%;
-      margin-right: 8px; }
-      .post-type-archive-teacher_bio .content-grid article.teacher_bio header.bio-header {
-        display: block;
-        min-height: 300px;
-        min-width: 300px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-color: #666;
-        position: relative; }
-        .post-type-archive-teacher_bio .content-grid article.teacher_bio header.bio-header h2.bio-title {
-          font-family: Open Sans ,san-serif;
-          color: white;
-          bottom: 0px;
-          left: 10px;
-          position: absolute; }
-      .post-type-archive-teacher_bio .content-grid article.teacher_bio .entry-content {
-        margin-top: 10px; } }
+      margin-right: 8px; } }
 
-@media screen and (min-width: 320px) {
-  .single-teacher_bio header.bio-header {
-    height: 400px;
-    margin-bottom: 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; } }
+.single header.bio-header, .single .entry-header, .page-template-fullwidthpage header.bio-header, .page-template-fullwidthpage .entry-header, .single header.bio-header, .single .entry-header, .page-template-fluidwidthpage header.bio-header, .page-template-fluidwidthpage .entry-header {
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+  .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fullwidthpage header.bio-header h2.bio-title, .page-template-fullwidthpage .entry-header h2.bio-title, .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fluidwidthpage header.bio-header h2.bio-title, .page-template-fluidwidthpage .entry-header h2.bio-title {
+    font-family: Lora, serif;
+    font-style: italic;
+    font-size: 4em;
+    color: white;
+    position: absolute;
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
+
+@media screen and (max-width: 599px) {
+  .single header.bio-header, .single .entry-header, .page-template-fullwidthpage header.bio-header, .page-template-fullwidthpage .entry-header, .single header.bio-header, .single .entry-header, .page-template-fluidwidthpage header.bio-header, .page-template-fluidwidthpage .entry-header {
+    height: 300px; }
+    .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fullwidthpage header.bio-header h2.bio-title, .page-template-fullwidthpage .entry-header h2.bio-title, .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fluidwidthpage header.bio-header h2.bio-title, .page-template-fluidwidthpage .entry-header h2.bio-title {
+      top: 20px;
+      left: 20px;
+      font-size: 1.8em;
+      position: absolute; } }
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .single header.bio-header, .single .entry-header, .page-template-fullwidthpage header.bio-header, .page-template-fullwidthpage .entry-header, .single header.bio-header, .single .entry-header, .page-template-fluidwidthpage header.bio-header, .page-template-fluidwidthpage .entry-header {
+    height: 400px; }
+    .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fullwidthpage header.bio-header h2.bio-title, .page-template-fullwidthpage .entry-header h2.bio-title, .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fluidwidthpage header.bio-header h2.bio-title, .page-template-fluidwidthpage .entry-header h2.bio-title {
+      color: white;
+      bottom: 40px;
+      left: 40px;
+      position: absolute; } }
+
+@media screen and (min-width: 1024px) {
+  .single header.bio-header, .single .entry-header, .page-template-fullwidthpage header.bio-header, .page-template-fullwidthpage .entry-header, .single header.bio-header, .single .entry-header, .page-template-fluidwidthpage header.bio-header, .page-template-fluidwidthpage .entry-header {
+    height: 80vh; }
+    .single header.bio-header h2.bio-title, .single header.bio-header .entry-title, .single .entry-header h2.bio-title, .single .entry-header .entry-title, .page-template-fullwidthpage header.bio-header h2.bio-title, .page-template-fullwidthpage header.bio-header .entry-title, .page-template-fullwidthpage .entry-header h2.bio-title, .page-template-fullwidthpage .entry-header .entry-title, .single header.bio-header h2.bio-title, .single header.bio-header .entry-title, .single .entry-header h2.bio-title, .single .entry-header .entry-title, .page-template-fluidwidthpage header.bio-header h2.bio-title, .page-template-fluidwidthpage header.bio-header .entry-title, .page-template-fluidwidthpage .entry-header h2.bio-title, .page-template-fluidwidthpage .entry-header .entry-title {
+      bottom: 40px;
+      left: 300px; } }
+
+.page-template-default .offset-container {
+  position: relative;
+  top: 0px;
+  background-color: #fff;
+  padding: 10px; }
+
+.offset-container {
+  position: relative;
+  top: -160px;
+  background-color: #fff;
+  padding: 10px; }
+
+@media screen and (max-width: 600px) {
+  .offset-container {
+    position: relative;
+    top: 0;
+    background-color: #fff;
+    padding: 10px; } }
 
 article.post {
-  margin: 20px 0 0 0; }
+  margin: 0px 0 0 0; }
   article.post .entry-header {
     font-size: 0.8em !important;
     margin-bottom: 5px; }
-    article.post .entry-header .entry-meta .updated {
-      display: none; }
+    article.post .entry-header .entry-meta a {
+      color: black; }
   article.post .entry-content {
     margin: 16px 0 0; }
   article.post .entry-footer {
@@ -11220,16 +11270,31 @@ article.post {
     article.post .entry-footer .tags-links {
       background-color: #DE5A13; }
 
+.comments-area {
+  margin-top: 50px;
+  background-color: #e3e3e3;
+  padding: 20px 10px; }
+
+h2.comments-title {
+  font: italic 1.8 em Lora, serif;
+  font-style: italic;
+  color: #000;
+  line-height: 1.6em; }
+
 article.page {
-  margin: 20px 0 0 0; }
+  margin: 0px 0 0 0; }
   article.page .entry-header {
     postion: relative; }
-    article.page .entry-header img.wp-post-image {
-      min-width: 100vw; }
-    article.page .entry-header .entry-meta {
-      font-size: 0.4 rem !important; }
+  article.page .entry-meta {
+    font-size: 0.4 rem !important; }
   article.page .entry-content {
     margin: 16px 0 0; }
+
+.home header {
+  height: 30px; }
+
+.page-about-us header.entry-header, .page-about-us header.bio-header, .teacher_bio-cadia-belante header.entry-header, .teacher_bio-cadia-belante header.bio-header {
+  background-position: top; }
 
 .healcode .class_show {
   margin: 10px 0 20px; }
@@ -11278,6 +11343,10 @@ div.healcode .class_list .class_offered_link a, div.healcode .class_list .traine
 .entry-content .alignwide.pricing {
   max-width: 1024px; }
 
+#footer-full-content {
+  padding: 20px;
+  min-height: 20vh; }
+
 #wrapper-footer {
   height: 40px;
   background-color: #000;
@@ -11286,5 +11355,29 @@ div.healcode .class_list .class_offered_link a, div.healcode .class_list .traine
   #wrapper-footer .site-info, #wrapper-footer .site-info a {
     font: 100 12px 'Open Sans', sans-serif;
     color: white; }
+
+.post-edit-link {
+  background-color: #754312;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  width: 80px;
+  font: bold 0.6em 'open-sans',sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: break-word;
+  color: #FDF3E3; }
+
+.post-edit-link:hover {
+  color: #F8AB3A; }
 
 /*# sourceMappingURL=child-theme.css.map */

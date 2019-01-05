@@ -16,11 +16,13 @@ $bioImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 <?php
-	echo '<header class="bio-header" style="background-image:url('.$bioImg[0].')">';
+	echo '<header class="bio-header alignfull" style="background-image:url('.$bioImg[0].')">';
 ?>
 
 
+	
 	<?php	the_title( '<h2 class="bio-title">', '</h2>' ); ?>
+
 	<a class="bio-link" href=""></a>
 	</header><!-- .entry-header -->
 

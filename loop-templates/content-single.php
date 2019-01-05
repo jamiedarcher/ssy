@@ -12,22 +12,30 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
+	<?php /* grab the url for the full size featured image */
+	$postCover = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+	?>
+	<?php
+		echo '<header class="entry-header alignfull" style="background-image:url('.$postCover[0].')">';
+	?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-
-			<?php understrap_posted_on(); ?>
-
-		</div><!-- .entry-meta -->
 
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<div class="offset-container">
+	<div class="entry-meta">
+
+		<?php understrap_posted_on(); ?>
+
+	</div><!-- .entry-meta -->
+
+	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+
 
 	<div class="entry-content">
-		
+
 		<?php
 			$link = get_field('cta_link');
 			if( $link ):
@@ -53,5 +61,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<?php understrap_entry_footer(); ?>
 
 	</footer><!-- .entry-footer -->
-
+</div>
 </article><!-- #post-## -->

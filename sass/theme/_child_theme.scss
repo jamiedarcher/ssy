@@ -13,19 +13,69 @@ body{
 
 //* Title and Font Overides  *//
 
-.hentry{
+a {
+    color: $secondary-900;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+    color: $secondary-500;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: $primary-800;
+}
+
+h3 a, h4 a,{
+  color: $primary-300;
+}
+
+.page, .single, .archive{
+  h1.entry-title, h1.page-title{
+    font: 4em/1em Lora, serif;
+    color: $primary-300;
+    padding-bottom: 10px;
+  }
+  h3{
+    color: $primary-300;
+  }
+  h4{
+    color: $primary-300;
+  }
+  .entry-meta{
+    font: bold 0.8em/1.2em Rubik, serif;
+    margin-bottom: 20px;
+    .byline{
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    a {
+      color: black;
+      .updated{
+        display:none;
+      }
+    }
+  }
+}
+
+.hentry, {
   .entry-content{
-    p.subtitle{
-      font: normal 1em Lora, serif;
+    p.subtitle, h2, h2 a{
+      font: bold italic 1.2em Lora, serif;
       font-style: italic;
       color: #000;
-      line-height: 1.2em;
+      line-height: 1.6em;
     }
     p, ul, ol, dl{
       color:$secondary;
     }
   }
 }
+
+
 
 @media screen and (max-width: 600px) {
   h1.entry-title{font:italic 2em 'lora', serif;}
@@ -39,7 +89,7 @@ body{
 
 
 
-//USEL OVERIDES
+//CAROUSEL OVERIDES
 
 .hero-carousel{
   max-width: 100vw;
@@ -196,81 +246,80 @@ body{
   left:-10000px;
 }
 
+//POST NAVIGATION
+.post-navigation{
+  padding:20px 30px;
+  margin-top:20px;
+  background-color: $primary-100;
+  border-radius: 8px 8px 0px 0px;
+}
+
 //ARCHIVE STYLING
+
+//Blog ARCHIVE
+
+
 //Teachers Archive
 
 .post-type-archive-teacher_bio .page-header{
   margin-top: 20px;
 }
 
-@media screen and (max-width: 600px) {
+.post-type-archive-teacher_bio{
+  .content-grid{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    header.bio-header{
+      display:block;
+      min-height: 300px;
+      min-width: 300px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-color: #666;
+      position: relative;
+      h2.bio-title{
+        font-family:Lora, serif;
+        color:white;
+        bottom: 0px;
+        left: 10px;
+        position: absolute;
+        text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+      }
+    }
+
+    .bio-link{
+
+    }
+    .entry-content{
+      margin-top:1em;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
   .post-type-archive-teacher_bio{
     .content-grid{
-      display:flex;
-      flex-direction:column;
-      flex-wrap: wrap;
-      justify-content: space-between;
       article.teacher_bio{
         max-width:100%;
         margin:5px;
-        header.bio-header{
-          display:block;
-          min-height: 300px;
-          min-width: 300px;
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-color: #666;
-          position: relative;
-          h2.bio-title{
-            font-family:Open Sans ,san-serif;
-            color:white;
-            bottom: 0px;
-            left: 10px;
-            position: absolute;
-          }
-          .bio-link{
 
-          }
-        }
-        .entry-content{
-          margin-top:5px;
-        }
+
       }
     }
   }
 }
 
-@media screen and (max-width: 1024px) and (min-width: 600px) {
+@media screen and (min-width: 771px) {
   .post-type-archive-teacher_bio{
     .content-grid{
-      display:flex;
       flex-direction:row;
-      flex-wrap: wrap;
-      justify-content: space-between;
       article.teacher_bio{
-        width:49%;
+        width:48%;
         margin-right:2px;
-        header.bio-header{
-          display:block;
-          min-height: 300px;
-          min-width: 300px;
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-color: #666;
-          position: relative;
-          h2.bio-title{
-            font-family:Open Sans ,san-serif;
-            color:white;
-            bottom: 0px;
-            left: 10px;
-            position: absolute;
-          }
-        }
-        .entry-content{
-          margin-top:5px;
-        }
+
       }
     }
   }
@@ -279,74 +328,123 @@ body{
 @media screen and (min-width: 1024px) {
   .post-type-archive-teacher_bio{
     .content-grid{
-      display:flex;
       flex-direction:row;
-      flex-wrap: wrap;
       justify-content: flex-start;
       article.teacher_bio{
         width:32%;
         margin-right:8px;
-        header.bio-header{
-          display:block;
-          min-height: 300px;
-          min-width: 300px;
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-color: #666;
-          position: relative;
-          h2.bio-title{
-            font-family:Open Sans ,san-serif;
-            color:white;
-            bottom: 0px;
-            left: 10px;
-            position: absolute;
-          }
-        }
-        .entry-content{
-          margin-top:10px;
-        }
+
       }
     }
   }
 }
 
+
+
 //TEACHER PAGE STYLING
 
+.single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
+  header.bio-header, .entry-header{
+    margin-bottom:20px;
+    margin-bottom:20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    h2.bio-title{
+      font-family:Lora, serif;
+      font-style: italic;
+      font-size: 4em;
+      color:white;
+      position: absolute;
+      text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 
-@media screen and (min-width: 320px) {
-  .single-teacher_bio{
-    header.bio-header{
-      height: 400px;
-      margin-bottom:20px;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
     }
   }
 }
-@media screen and (max-width: 1024px) and (min-width: 600px) {
 
-}
-
-@media screen and (min-width: 1024px) {
-  .single-teacher_bio{
-
+@media screen and (max-width: 599px) {
+  .single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
+    header.bio-header, .entry-header{
+      height: 300px;
+      h2.bio-title{
+        top:20px;
+        left:20px;
+        font-size: 1.8em ;
+        position: absolute;
+      }
+    }
   }
 }
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
+    header.bio-header, .entry-header{
+      height: 400px;
+      h2.bio-title{
+        color:white;
+        bottom:40px;
+        left:40px;
+        position: absolute;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
+    header.bio-header, .entry-header{
+      height: 80vh;
+      h2.bio-title, .entry-title{
+        bottom:40px;
+        left:300px;
+      }
+    }
+  }
+}
+
 
 //Basic Page Styling
 
 //POST STYLING
 
+.page-template-default{
+  .offset-container {
+      position: relative;
+      top: 0px;
+      background-color: #fff;
+      padding: 10px;
+  }
+}
+
+.offset-container{
+  position: relative;
+  top:-160px;
+  background-color: #fff;
+  padding:10px;
+}
+
+@media screen and (max-width: 600px) {
+  .offset-container{
+    position: relative;
+    top:0;
+    background-color: #fff;
+    padding:10px;
+  }
+}
+
 //Generic blog style
 article.post{
-  margin: 20px 0 0 0;
+  margin: 0px 0 0 0;
   .entry-header{
     font-size:0.8em !important;
     margin-bottom:5px;
     .entry-meta{
-      .updated{display: none;}
+
+      a{
+        color: black;
+      }
     }
   }
   .entry-content{
@@ -360,42 +458,59 @@ article.post{
   }
 }
 
+// Post comments
 
+.comments-area{
+  margin-top: 50px;
+  background-color:#e3e3e3;
+  padding: 20px 10px;
+}
+
+h2.comments-title{
+  font:  italic 1.8 em Lora, serif;
+  font-style: italic;
+  color: #000;
+  line-height: 1.6em;
+}
 
 //PAGE STYLING
 
 //Basic Page Styling
 
 article.page{
-  margin: 20px 0 0 0;
+  margin: 0px 0 0 0;
   .entry-header{
     postion:relative;
-    img.wp-post-image{
-      min-width:100vw;
-    }
+  }
     .entry-title{
 
     }
     .entry-meta{
       font-size:0.4 rem !important;
-
     }
-
-  }
   .entry-content{
     margin:16px 0 0;
   }
 }
+
 
 //Page Plus Sideabr
 
 
 //Page Without Sidebar
 
-//Page Feature Image and Title
+//CUSTOM HEADER IMAGE ADJUSTMENTs
 
-article.page{
+.home {
+  header{
+    height: 30px;
+  }
+}
 
+.page-about-us, .teacher_bio-cadia-belante{
+  header.entry-header, header.bio-header{
+    background-position:top;
+  }
 }
 
 //** MINDBODY WIDGET STYLES**//
@@ -493,6 +608,13 @@ div.healcode .class_list .class_offered_link a, div.healcode .class_list .traine
   }
 }
 
+//FOOTER WIDGETS
+
+#footer-full-content{
+  padding:20px;
+  min-height:20vh;
+}
+
 //FOOTER
 
 #wrapper-footer{
@@ -520,3 +642,30 @@ div.healcode .class_list .class_offered_link a, div.healcode .class_list .traine
 
 
 //Buttons and links
+//Post Edit links
+
+.post-edit-link{
+
+  background-color: $secondary-600;
+  border: none;
+  border-radius: 4px;
+  box-shadow: none;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  width: 80px;
+  font: bold 0.6em 'open-sans',sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top:20px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: break-word;
+  color: $primary-50;
+}
+
+.post-edit-link:hover{
+  color: $primary-400;
+}

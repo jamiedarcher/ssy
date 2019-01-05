@@ -1,19 +1,16 @@
 <?php
 $slides = array();
-$args = array( 'tag' => 'slide', 'nopaging'=>true, 'posts_per_page'=>5, 'meta_key' => 'cta_link' );
-
+$args = array(
+  'tag' => 'slide',
+  'nopaging'=>true, '
+  posts_per_page'=>5
+);
 $slider_query = new WP_Query( $args );
 if ( $slider_query->have_posts() ) {
     while ( $slider_query->have_posts() ) {
         $slider_query->the_post();
-        $link = get_field('cta_link', $post_id);
-        if( $link ):
-          $link_url = $link['url'];
-          $link_title = $link['title'];
-          $link_target = $link['target'] ? $link['target'] : '_self';
-        endif;
-
-
+        $link = get_field('cta_link', $slider_query->id);
+        echo $slider_query->post->id;
         if(has_post_thumbnail()){
             $temp = array();
             $thumb_id = get_post_thumbnail_id();
@@ -34,13 +31,10 @@ wp_reset_postdata();
 <div id="carouselHome" class="carousel slide" data-ride="carousel"  data-pause="" data-interval="7000" data-keyboard="true">
 
     <ol class="carousel-indicators">
-        <?php for($i=0;$i<count($slides);$i++) {
-          echo $link_url;
-          echo $link_title;
-          echo $link_target;?>
+        <?php for($i=0;$i<count($slides);$i++) {?>
         <li data-target="#carouselHome" data-slide-to="<?php echo $i ?>" <?php if($i==0) { ?>class="active"<?php } ?>></li>
         <?php } ?>
-    </ol>
+      </ol>
 
     <div class="carousel-inner" role="listbox">
         <?php $i=0; foreach($slides as $slide) { extract($slide); ?>
@@ -48,9 +42,18 @@ wp_reset_postdata();
             <img src="<?php echo $image ?>" alt="<?php echo esc_attr($title); ?>">
             <div class="carousel-caption col-4">
               <h3><?php echo $title; ?></h3>
-              <p><?php echo $excerpt; ?></p>
+              <p><?php echo $excerpt;
+              ?></p>
+              <?php
+              $link = get_field('cta_link', get_the_ID());
+              if( $link ):
+                $link_url = $link['url'];
+                $link_title = $link['title'];
+                $link_target = $link['target'] ? $link['target'] : '_self';
+                ?>
+                <a class="carousel-button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                <?php endif; ?>
 
-              <a class="carousel-button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
 
             </div>
         </div>
