@@ -27,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 </head>
 
 <body <?php body_class(); ?>>
-
+<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 <div class="site" id="page">
 
 	<!-- ******************* The Navbar Area ******************* -->
