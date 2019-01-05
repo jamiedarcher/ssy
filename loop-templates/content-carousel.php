@@ -3,13 +3,13 @@ $slides = array();
 $args = array(
   'tag' => 'slide',
   'nopaging'=>true, '
-  posts_per_page'=>5
+  posts_per_page'=>10
 );
 $slider_query = new WP_Query( $args );
 if ( $slider_query->have_posts() ) {
     while ( $slider_query->have_posts() ) {
         $slider_query->the_post();
-        $link = get_field('cta_link', $slider_query->id);
+
         echo $slider_query->post->id;
         if(has_post_thumbnail()){
             $temp = array();
@@ -45,7 +45,7 @@ wp_reset_postdata();
               <p><?php echo $excerpt;
               ?></p>
               <?php
-              $link = get_field('cta_link', get_the_ID());
+
               if( $link ):
                 $link_url = $link['url'];
                 $link_title = $link['title'];

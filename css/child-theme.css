@@ -10860,21 +10860,24 @@ blockquote {
 .wp-block-columns.pricing {
   margin: 40px 0; }
   .wp-block-columns.pricing .wp-block-column {
-    padding: 5px;
-    border: 1px grey dashed;
-    border-radius: 2px;
-    margin: 10px; }
+    padding: 0px;
+    border-radius: 2px 0px 0px 2px;
+    margin: 10px;
+    background-color: #e3e3e3;
+    -webkit-box-shadow: 0px 8px 59px -4px #e0d3e0;
+            box-shadow: 0px 8px 59px -4px #e0d3e0; }
     .wp-block-columns.pricing .wp-block-column h4 {
-      font: 800 0.8em 'Open Sans', san-serif;
+      font: 800 1.2em 'Open Sans', san-serif;
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 1em;
       letter-spacing: 0px;
-      background-color: #ED821D;
-      padding: 10px 10px;
-      height: 40px;
+      color: #4A1A00;
+      background-color: #F89C23;
+      padding: 15px 10px;
+      height: 60px;
       vertical-align: middle;
-      border-radius: 5px; }
+      border-radius: 5px 5px 0px 0px; }
     .wp-block-columns.pricing .wp-block-column h3 {
       font: 100 1.8em 'Open Sans', san-serif;
       text-transform: uppercase;
