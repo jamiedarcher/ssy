@@ -236,7 +236,14 @@ h3 a, h4 a,{
 
 .navbar-nav{
   background-color: transparent;
-  box-shadow: none;
+
+}
+
+@media screen and (max-width: 600px){
+  .navbar-nav{
+    background-color: #f9cebc;
+    box-shadow: 0px 3px 6px 0px rgba(163,163,163,1);
+  }
 }
 //HOME Page
 
