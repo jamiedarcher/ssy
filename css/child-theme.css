@@ -11124,7 +11124,7 @@ h3 a, h4 a {
 .navbar-nav {
   background-color: transparent; }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 980px) {
   .navbar-nav {
     background-color: #f9cebc;
     -webkit-box-shadow: 0px 3px 6px 0px #a3a3a3;
