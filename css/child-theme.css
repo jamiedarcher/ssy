@@ -11219,6 +11219,9 @@ h3 a, h4 a {
     position: absolute;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
+.page-timetable .entry-header {
+  height: 80px; }
+
 @media screen and (max-width: 599px) {
   .single header.bio-header, .single .entry-header, .page-template-fullwidthpage header.bio-header, .page-template-fullwidthpage .entry-header, .single header.bio-header, .single .entry-header, .page-template-fluidwidthpage header.bio-header, .page-template-fluidwidthpage .entry-header {
     height: 300px; }
@@ -11226,7 +11229,9 @@ h3 a, h4 a {
       top: 20px;
       left: 20px;
       font-size: 1.8em;
-      position: absolute; } }
+      position: absolute; }
+  .page-timetable .entry-header {
+    height: 0px; } }
 
 @media screen and (max-width: 1024px) and (min-width: 600px) {
   .single header.bio-header, .single .entry-header, .page-template-fullwidthpage header.bio-header, .page-template-fullwidthpage .entry-header, .single header.bio-header, .single .entry-header, .page-template-fluidwidthpage header.bio-header, .page-template-fluidwidthpage .entry-header {
@@ -11235,14 +11240,18 @@ h3 a, h4 a {
       color: white;
       bottom: 40px;
       left: 40px;
-      position: absolute; } }
+      position: absolute; }
+  .page-timetable .entry-header {
+    height: 10px; } }
 
 @media screen and (min-width: 1024px) {
-  .single header.bio-header, .single .entry-header, .page-template-fullwidthpage header.bio-header, .page-template-fullwidthpage .entry-header, .single header.bio-header, .single .entry-header, .page-template-fluidwidthpage header.bio-header, .page-template-fluidwidthpage .entry-header {
+  .single .entry-header, .page-template-fullwidthpage .entry-header, .single .entry-header, .page-template-fluidwidthpage .entry-header {
     height: 80vh; }
-    .single header.bio-header h2.bio-title, .single header.bio-header .entry-title, .single .entry-header h2.bio-title, .single .entry-header .entry-title, .page-template-fullwidthpage header.bio-header h2.bio-title, .page-template-fullwidthpage header.bio-header .entry-title, .page-template-fullwidthpage .entry-header h2.bio-title, .page-template-fullwidthpage .entry-header .entry-title, .single header.bio-header h2.bio-title, .single header.bio-header .entry-title, .single .entry-header h2.bio-title, .single .entry-header .entry-title, .page-template-fluidwidthpage header.bio-header h2.bio-title, .page-template-fluidwidthpage header.bio-header .entry-title, .page-template-fluidwidthpage .entry-header h2.bio-title, .page-template-fluidwidthpage .entry-header .entry-title {
+    .single .entry-header h2.bio-title, .single .entry-header .entry-title, .page-template-fullwidthpage .entry-header h2.bio-title, .page-template-fullwidthpage .entry-header .entry-title, .single .entry-header h2.bio-title, .single .entry-header .entry-title, .page-template-fluidwidthpage .entry-header h2.bio-title, .page-template-fluidwidthpage .entry-header .entry-title {
       bottom: 40px;
-      left: 300px; } }
+      left: 300px; }
+  .page-timetable header.bio-header, .page-timetable .entry-header {
+    height: 20vh; } }
 
 .page-template-default .offset-container {
   position: relative;

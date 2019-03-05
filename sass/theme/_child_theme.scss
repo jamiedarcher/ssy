@@ -369,6 +369,13 @@ h3 a, h4 a,{
     }
   }
 }
+.page-timetable{
+  .entry-header{
+    height: 80px;
+  }
+}
+
+
 
 @media screen and (max-width: 599px) {
   .single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
@@ -380,6 +387,11 @@ h3 a, h4 a,{
         font-size: 1.8em ;
         position: absolute;
       }
+    }
+  }
+  .page-timetable{
+    .entry-header{
+      height: 0px;
     }
   }
 }
@@ -396,17 +408,27 @@ h3 a, h4 a,{
       }
     }
   }
+  .page-timetable{
+    .entry-header{
+      height: 10px;
+    }
+  }
 }
 
 
 @media screen and (min-width: 1024px) {
   .single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
-    header.bio-header, .entry-header{
+    .entry-header{
       height: 80vh;
       h2.bio-title, .entry-title{
         bottom:40px;
         left:300px;
       }
+    }
+  }
+  .page-timetable{
+    header.bio-header, .entry-header{
+      height: 20vh;
     }
   }
 }
