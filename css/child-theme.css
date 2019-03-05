@@ -11242,7 +11242,7 @@ h3 a, h4 a {
       left: 40px;
       position: absolute; }
   .page-timetable .entry-header {
-    height: 10px; } }
+    height: 180px; } }
 
 @media screen and (min-width: 1024px) {
   .single .entry-header, .page-template-fullwidthpage .entry-header, .single .entry-header, .page-template-fluidwidthpage .entry-header {
