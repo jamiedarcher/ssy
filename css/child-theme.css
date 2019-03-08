@@ -11210,13 +11210,16 @@ h3 a, h4 a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  height: 80vh; }
   .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fullwidthpage header.bio-header h2.bio-title, .page-template-fullwidthpage .entry-header h2.bio-title, .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fluidwidthpage header.bio-header h2.bio-title, .page-template-fluidwidthpage .entry-header h2.bio-title {
     font-family: Lora, serif;
     font-style: italic;
     font-size: 4em;
     color: white;
     position: absolute;
+    bottom: 40px;
+    left: 40px;
     text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
 .page-timetable .entry-header {
