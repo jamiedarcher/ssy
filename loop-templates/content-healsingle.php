@@ -1,6 +1,6 @@
 <?php
 /**
- * Teacher bio partial template.
+ * Therapy bio partial template.
  *
  * @package understrap
  */

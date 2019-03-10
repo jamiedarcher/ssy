@@ -15,15 +15,18 @@ $bioImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' 
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-<?php
-	echo '<header class="bio-header alignfull" style="background-image:url('.$bioImg[0].')">';
+<?php if ( is_post_type_archive() ) {
+	echo '<header class="healing-header" style="background-image:url('.$healingImg[0].')">';
+	} else {
+	//everything else
+	echo '<header class="healing-header">';
+	}
 ?>
-
-
+<?php if (is_singular( 'therapy' ) ) {
+	echo get_the_post_thumbnail( $post->ID, 'full' );
+	} ?>
 
 	<?php	the_title( '<h2 class="bio-title">', '</h2>' ); ?>
-
-	<a class="bio-link" href=""></a>
 	</header><!-- .entry-header -->
 
 

@@ -266,19 +266,21 @@ h3 a, h4 a,{
 //Blog ARCHIVE
 
 
-//Teachers Archive
+//CUSTOM GRID LAYOUTS
 
-.post-type-archive-teacher_bio .page-header{
-  margin-top: 20px;
+.post-type-archive{
+   .page-header{
+     margin-top: 20px;
+  }
 }
 
-.post-type-archive-teacher_bio{
+.post-type-archive{
   .content-grid{
     display:flex;
     flex-direction:column;
     flex-wrap: wrap;
     justify-content: space-between;
-    header.bio-header{
+    header{
       display:block;
       min-height: 300px;
       min-width: 300px;
@@ -287,7 +289,7 @@ h3 a, h4 a,{
       background-repeat: no-repeat;
       background-color: #666;
       position: relative;
-      h2.bio-title{
+      h2{
         font-family:Lora, serif;
         color:white;
         bottom: 0px;
@@ -307,9 +309,9 @@ h3 a, h4 a,{
 }
 
 @media screen and (max-width: 770px) {
-  .post-type-archive-teacher_bio{
+  .post-type-archive{
     .content-grid{
-      article.teacher_bio{
+      article{
         max-width:100%;
         margin:5px;
 
@@ -320,10 +322,10 @@ h3 a, h4 a,{
 }
 
 @media screen and (min-width: 771px) {
-  .post-type-archive-teacher_bio{
+  .post-type-archive{
     .content-grid{
       flex-direction:row;
-      article.teacher_bio{
+      article{
         width:48%;
         margin-right:2px;
 
@@ -333,11 +335,11 @@ h3 a, h4 a,{
 }
 
 @media screen and (min-width: 1024px) {
-  .post-type-archive-teacher_bio{
+  .post-type-archive{
     .content-grid{
       flex-direction:row;
       justify-content: flex-start;
-      article.teacher_bio{
+      article{
         width:32%;
         margin-right:8px;
 
@@ -348,7 +350,7 @@ h3 a, h4 a,{
 
 
 
-//TEACHER PAGE STYLING
+//SINGLE PAGE STYLING
 
 .single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
   header.bio-header, .entry-header{
@@ -359,7 +361,7 @@ h3 a, h4 a,{
     background-repeat: no-repeat;
     position: relative;
     height: 80vh;
-    h2.bio-title{
+    h2{
       font-family:Lora, serif;
       font-style: italic;
       font-size: 4em;
@@ -384,7 +386,7 @@ h3 a, h4 a,{
   .single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
     header.bio-header, .entry-header{
       height: 300px;
-      h2.bio-title{
+      h2{
         top:20px;
         left:20px;
         font-size: 1.8em ;
@@ -403,7 +405,7 @@ h3 a, h4 a,{
   .single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
     header.bio-header, .entry-header{
       height: 400px;
-      h2.bio-title{
+      h2{
         color:white;
         bottom:40px;
         left:40px;
@@ -423,14 +425,14 @@ h3 a, h4 a,{
   .single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
     .entry-header{
       height: 80vh;
-      h2.bio-title, .entry-title{
+      h2, .entry-title{
         bottom:40px;
         left:300px;
       }
     }
   }
   .page-timetable{
-    header.bio-header, .entry-header{
+    header, .entry-header{
       height: 20vh;
     }
   }
@@ -539,7 +541,7 @@ article.page{
   }
 }
 
-.page-about-us, .teacher_bio-cadia-belante{
+.page-about-us, .teacher_bio-cadia-belante, .teacher_bio-mickey-space{
   header.entry-header, header.bio-header{
     background-position:top;
   }

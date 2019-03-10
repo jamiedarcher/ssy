@@ -1,6 +1,6 @@
 <?php
 /**
- * Teacher bio partial template.
+ * Teacher bio partial template for the grid.
  *
  * @package understrap
  */

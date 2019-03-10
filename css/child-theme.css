@@ -11141,10 +11141,10 @@ h3 a, h4 a {
   background-color: #FBE1B9;
   border-radius: 8px 8px 0px 0px; }
 
-.post-type-archive-teacher_bio .page-header {
+.post-type-archive .page-header {
   margin-top: 20px; }
 
-.post-type-archive-teacher_bio .content-grid {
+.post-type-archive .content-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11157,7 +11157,7 @@ h3 a, h4 a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .post-type-archive-teacher_bio .content-grid header.bio-header {
+  .post-type-archive .content-grid header {
     display: block;
     min-height: 300px;
     min-width: 300px;
@@ -11166,33 +11166,33 @@ h3 a, h4 a {
     background-repeat: no-repeat;
     background-color: #666;
     position: relative; }
-    .post-type-archive-teacher_bio .content-grid header.bio-header h2.bio-title {
+    .post-type-archive .content-grid header h2 {
       font-family: Lora, serif;
       color: white;
       bottom: 0px;
       left: 10px;
       position: absolute;
       text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5); }
-  .post-type-archive-teacher_bio .content-grid .entry-content {
+  .post-type-archive .content-grid .entry-content {
     margin-top: 1em; }
 
 @media screen and (max-width: 770px) {
-  .post-type-archive-teacher_bio .content-grid article.teacher_bio {
+  .post-type-archive .content-grid article {
     max-width: 100%;
     margin: 5px; } }
 
 @media screen and (min-width: 771px) {
-  .post-type-archive-teacher_bio .content-grid {
+  .post-type-archive .content-grid {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
-    .post-type-archive-teacher_bio .content-grid article.teacher_bio {
+    .post-type-archive .content-grid article {
       width: 48%;
       margin-right: 2px; } }
 
 @media screen and (min-width: 1024px) {
-  .post-type-archive-teacher_bio .content-grid {
+  .post-type-archive .content-grid {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -11200,7 +11200,7 @@ h3 a, h4 a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-    .post-type-archive-teacher_bio .content-grid article.teacher_bio {
+    .post-type-archive .content-grid article {
       width: 32%;
       margin-right: 8px; } }
 
@@ -11212,7 +11212,7 @@ h3 a, h4 a {
   background-repeat: no-repeat;
   position: relative;
   height: 80vh; }
-  .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fullwidthpage header.bio-header h2.bio-title, .page-template-fullwidthpage .entry-header h2.bio-title, .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fluidwidthpage header.bio-header h2.bio-title, .page-template-fluidwidthpage .entry-header h2.bio-title {
+  .single header.bio-header h2, .single .entry-header h2, .page-template-fullwidthpage header.bio-header h2, .page-template-fullwidthpage .entry-header h2, .single header.bio-header h2, .single .entry-header h2, .page-template-fluidwidthpage header.bio-header h2, .page-template-fluidwidthpage .entry-header h2 {
     font-family: Lora, serif;
     font-style: italic;
     font-size: 4em;
@@ -11228,7 +11228,7 @@ h3 a, h4 a {
 @media screen and (max-width: 599px) {
   .single header.bio-header, .single .entry-header, .page-template-fullwidthpage header.bio-header, .page-template-fullwidthpage .entry-header, .single header.bio-header, .single .entry-header, .page-template-fluidwidthpage header.bio-header, .page-template-fluidwidthpage .entry-header {
     height: 300px; }
-    .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fullwidthpage header.bio-header h2.bio-title, .page-template-fullwidthpage .entry-header h2.bio-title, .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fluidwidthpage header.bio-header h2.bio-title, .page-template-fluidwidthpage .entry-header h2.bio-title {
+    .single header.bio-header h2, .single .entry-header h2, .page-template-fullwidthpage header.bio-header h2, .page-template-fullwidthpage .entry-header h2, .single header.bio-header h2, .single .entry-header h2, .page-template-fluidwidthpage header.bio-header h2, .page-template-fluidwidthpage .entry-header h2 {
       top: 20px;
       left: 20px;
       font-size: 1.8em;
@@ -11239,7 +11239,7 @@ h3 a, h4 a {
 @media screen and (max-width: 1024px) and (min-width: 600px) {
   .single header.bio-header, .single .entry-header, .page-template-fullwidthpage header.bio-header, .page-template-fullwidthpage .entry-header, .single header.bio-header, .single .entry-header, .page-template-fluidwidthpage header.bio-header, .page-template-fluidwidthpage .entry-header {
     height: 400px; }
-    .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fullwidthpage header.bio-header h2.bio-title, .page-template-fullwidthpage .entry-header h2.bio-title, .single header.bio-header h2.bio-title, .single .entry-header h2.bio-title, .page-template-fluidwidthpage header.bio-header h2.bio-title, .page-template-fluidwidthpage .entry-header h2.bio-title {
+    .single header.bio-header h2, .single .entry-header h2, .page-template-fullwidthpage header.bio-header h2, .page-template-fullwidthpage .entry-header h2, .single header.bio-header h2, .single .entry-header h2, .page-template-fluidwidthpage header.bio-header h2, .page-template-fluidwidthpage .entry-header h2 {
       color: white;
       bottom: 40px;
       left: 40px;
@@ -11250,10 +11250,10 @@ h3 a, h4 a {
 @media screen and (min-width: 1024px) {
   .single .entry-header, .page-template-fullwidthpage .entry-header, .single .entry-header, .page-template-fluidwidthpage .entry-header {
     height: 80vh; }
-    .single .entry-header h2.bio-title, .single .entry-header .entry-title, .page-template-fullwidthpage .entry-header h2.bio-title, .page-template-fullwidthpage .entry-header .entry-title, .single .entry-header h2.bio-title, .single .entry-header .entry-title, .page-template-fluidwidthpage .entry-header h2.bio-title, .page-template-fluidwidthpage .entry-header .entry-title {
+    .single .entry-header h2, .single .entry-header .entry-title, .page-template-fullwidthpage .entry-header h2, .page-template-fullwidthpage .entry-header .entry-title, .single .entry-header h2, .single .entry-header .entry-title, .page-template-fluidwidthpage .entry-header h2, .page-template-fluidwidthpage .entry-header .entry-title {
       bottom: 40px;
       left: 300px; }
-  .page-timetable header.bio-header, .page-timetable .entry-header {
+  .page-timetable header, .page-timetable .entry-header {
     height: 20vh; } }
 
 .page-template-default .offset-container {
@@ -11312,7 +11312,7 @@ article.page {
 .home header {
   height: 30px; }
 
-.page-about-us header.entry-header, .page-about-us header.bio-header, .teacher_bio-cadia-belante header.entry-header, .teacher_bio-cadia-belante header.bio-header {
+.page-about-us header.entry-header, .page-about-us header.bio-header, .teacher_bio-cadia-belante header.entry-header, .teacher_bio-cadia-belante header.bio-header, .teacher_bio-mickey-space header.entry-header, .teacher_bio-mickey-space header.bio-header {
   background-position: top; }
 
 .healcode .class_show {

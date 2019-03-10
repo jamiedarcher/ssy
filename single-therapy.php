@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single teacher posts.
+ * The template for displaying all single posts.
  *
  * @package understrap
  */
@@ -26,7 +26,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				<div class="col-md-8 offset-md-2">
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'loop-templates/content', 'teachersingle' ); ?>
+					<?php get_template_part( 'loop-templates/content', 'healsingle' ); ?>
 
 						<?php understrap_post_nav(); ?>
 
