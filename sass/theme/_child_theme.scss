@@ -353,7 +353,7 @@ h3 a, h4 a,{
 //SINGLE PAGE STYLING
 
 .single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
-  header.bio-header, .entry-header{
+  header.img-header, .entry-header{
     margin-bottom:20px;
     margin-bottom:20px;
     background-size: cover;
@@ -384,7 +384,7 @@ h3 a, h4 a,{
 
 @media screen and (max-width: 599px) {
   .single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
-    header.bio-header, .entry-header{
+    header.img-header, .entry-header{
       height: 300px;
       h2{
         top:20px;
@@ -403,7 +403,7 @@ h3 a, h4 a,{
 
 @media screen and (max-width: 1024px) and (min-width: 600px) {
   .single, .page-template-fullwidthpage, .single, .page-template-fluidwidthpage{
-    header.bio-header, .entry-header{
+    header.img-header, .entry-header{
       height: 400px;
       h2{
         color:white;

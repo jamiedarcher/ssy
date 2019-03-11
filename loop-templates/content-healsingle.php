@@ -11,12 +11,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php /* grab the url for the full size featured image */
-$bioImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+$img = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 <?php
-	echo '<header class="bio-header alignfull" style="background-image:url('.$bioImg[0].')">';
+	echo '<header class="img-header alignfull" style="background-image:url('.$img[0].')">';
 ?>
 
 

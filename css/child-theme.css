@@ -11204,7 +11204,7 @@ h3 a, h4 a {
       width: 32%;
       margin-right: 8px; } }
 
-.single header.bio-header, .single .entry-header, .page-template-fullwidthpage header.bio-header, .page-template-fullwidthpage .entry-header, .single header.bio-header, .single .entry-header, .page-template-fluidwidthpage header.bio-header, .page-template-fluidwidthpage .entry-header {
+.single header.img-header, .single .entry-header, .page-template-fullwidthpage header.img-header, .page-template-fullwidthpage .entry-header, .single header.img-header, .single .entry-header, .page-template-fluidwidthpage header.img-header, .page-template-fluidwidthpage .entry-header {
   margin-bottom: 20px;
   margin-bottom: 20px;
   background-size: cover;
@@ -11212,7 +11212,7 @@ h3 a, h4 a {
   background-repeat: no-repeat;
   position: relative;
   height: 80vh; }
-  .single header.bio-header h2, .single .entry-header h2, .page-template-fullwidthpage header.bio-header h2, .page-template-fullwidthpage .entry-header h2, .single header.bio-header h2, .single .entry-header h2, .page-template-fluidwidthpage header.bio-header h2, .page-template-fluidwidthpage .entry-header h2 {
+  .single header.img-header h2, .single .entry-header h2, .page-template-fullwidthpage header.img-header h2, .page-template-fullwidthpage .entry-header h2, .single header.img-header h2, .single .entry-header h2, .page-template-fluidwidthpage header.img-header h2, .page-template-fluidwidthpage .entry-header h2 {
     font-family: Lora, serif;
     font-style: italic;
     font-size: 4em;
@@ -11226,9 +11226,9 @@ h3 a, h4 a {
   height: 80px; }
 
 @media screen and (max-width: 599px) {
-  .single header.bio-header, .single .entry-header, .page-template-fullwidthpage header.bio-header, .page-template-fullwidthpage .entry-header, .single header.bio-header, .single .entry-header, .page-template-fluidwidthpage header.bio-header, .page-template-fluidwidthpage .entry-header {
+  .single header.img-header, .single .entry-header, .page-template-fullwidthpage header.img-header, .page-template-fullwidthpage .entry-header, .single header.img-header, .single .entry-header, .page-template-fluidwidthpage header.img-header, .page-template-fluidwidthpage .entry-header {
     height: 300px; }
-    .single header.bio-header h2, .single .entry-header h2, .page-template-fullwidthpage header.bio-header h2, .page-template-fullwidthpage .entry-header h2, .single header.bio-header h2, .single .entry-header h2, .page-template-fluidwidthpage header.bio-header h2, .page-template-fluidwidthpage .entry-header h2 {
+    .single header.img-header h2, .single .entry-header h2, .page-template-fullwidthpage header.img-header h2, .page-template-fullwidthpage .entry-header h2, .single header.img-header h2, .single .entry-header h2, .page-template-fluidwidthpage header.img-header h2, .page-template-fluidwidthpage .entry-header h2 {
       top: 20px;
       left: 20px;
       font-size: 1.8em;
@@ -11237,9 +11237,9 @@ h3 a, h4 a {
     height: 0px; } }
 
 @media screen and (max-width: 1024px) and (min-width: 600px) {
-  .single header.bio-header, .single .entry-header, .page-template-fullwidthpage header.bio-header, .page-template-fullwidthpage .entry-header, .single header.bio-header, .single .entry-header, .page-template-fluidwidthpage header.bio-header, .page-template-fluidwidthpage .entry-header {
+  .single header.img-header, .single .entry-header, .page-template-fullwidthpage header.img-header, .page-template-fullwidthpage .entry-header, .single header.img-header, .single .entry-header, .page-template-fluidwidthpage header.img-header, .page-template-fluidwidthpage .entry-header {
     height: 400px; }
-    .single header.bio-header h2, .single .entry-header h2, .page-template-fullwidthpage header.bio-header h2, .page-template-fullwidthpage .entry-header h2, .single header.bio-header h2, .single .entry-header h2, .page-template-fluidwidthpage header.bio-header h2, .page-template-fluidwidthpage .entry-header h2 {
+    .single header.img-header h2, .single .entry-header h2, .page-template-fullwidthpage header.img-header h2, .page-template-fullwidthpage .entry-header h2, .single header.img-header h2, .single .entry-header h2, .page-template-fluidwidthpage header.img-header h2, .page-template-fluidwidthpage .entry-header h2 {
       color: white;
       bottom: 40px;
       left: 40px;

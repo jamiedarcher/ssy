@@ -1,6 +1,6 @@
 <?php
 /**
- * Teacher bio partial template.
+ * Healing partial template.
  *
  * @package understrap
  */
@@ -11,12 +11,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <?php /* grab the url for the full size featured image */
-$bioImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+$img = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 <?php if ( is_post_type_archive() ) {
-	echo '<header class="healing-header" style="background-image:url('.$healingImg[0].')">';
+	echo '<header class="healing-header" style="background-image:url('.$img[0].')">';
 	} else {
 	//everything else
 	echo '<header class="healing-header">';
