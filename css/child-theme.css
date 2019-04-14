@@ -11042,16 +11042,15 @@ h3 a, h4 a {
   .hero-carousel .carousel .carousel-inner .carousel-item {
     margin: 0 auto;
     max-height: 85vh; }
-
-.carousel-caption {
-  position: absolute;
-  background-color: rgba(128, 76, 23, 0.4);
-  padding-left: 10px;
-  padding-right: 10px;
-  bottom: 50px; }
+    .hero-carousel .carousel .carousel-inner .carousel-item .carousel-caption {
+      position: absolute;
+      background-color: rgba(128, 76, 23, 0.4);
+      padding-left: 10px;
+      padding-right: 10px;
+      bottom: 50px; }
 
 @media screen and (min-width: 600px) and (max-width: 1600px) {
-  .carousel-caption {
+  .hero-carousel .carousel .carousel-inner .carousel-item .carousel-caption {
     position: absolute;
     right: 15%;
     bottom: 120px;
@@ -11064,11 +11063,11 @@ h3 a, h4 a {
     padding-right: 20px;
     color: #fff;
     text-align: center; }
-  .carousel-indicators {
+  .hero-carousel .carousel .carousel-inner .carousel-item .carousel-indicators {
     bottom: 80px; } }
 
 @media screen and (min-width: 1601px) {
-  .carousel-caption {
+  .hero-carousel .carousel .carousel-inner .carousel-item .carousel-caption {
     position: absolute;
     right: 15%;
     bottom: 60px;
