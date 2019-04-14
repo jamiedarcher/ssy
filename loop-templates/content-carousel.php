@@ -18,6 +18,7 @@ if ( $slider_query->have_posts() ) {
             $thumb_url = $thumb_url_array[0];
             $temp['title'] = get_the_title();
             $temp['excerpt'] = get_the_excerpt();
+            $temp['content'] = get_the_content();
             $temp['image'] = $thumb_url;
             $slides[] = $temp;
         }
@@ -40,9 +41,9 @@ wp_reset_postdata();
         <?php $i=0; foreach($slides as $slide) { extract($slide); ?>
         <div class="carousel-item alignfull <?php if($i == 0) { ?>active<?php } ?>">
             <img src="<?php echo $image ?>" alt="<?php echo esc_attr($title); ?>">
-            <div class="carousel-caption col-4">
+            <div class="carousel-caption">
               <h3><?php echo $title; ?></h3>
-              <p><?php echo $excerpt;
+              <p><?php echo $content;
               ?></p>
               <?php
 

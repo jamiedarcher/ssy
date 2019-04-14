@@ -90,6 +90,15 @@ h3 a, h4 a,{
 
 
 //CAROUSEL OVERIDES
+@media screen and (min-width: 600px){
+.carousel-item{
+  img{
+    position:relative;
+    min-width: 400px;
+    min-height:600px;
+  }
+}
+}
 
 .hero-carousel{
   max-width: 100vw;
@@ -99,20 +108,56 @@ h3 a, h4 a,{
       .carousel-item{
         margin: 0 auto;
         max-height: 85vh;
-        .carousel-caption{
-          text-align: left;
-          background-color: rgba($secondary-500, 0.4);
-          bottom: 50px;
-        }
-        img{
-          position:relative;
-          width:100vw;
-          top:-75px;
-        }
+
+
       }
     }
   }
 }
+
+.carousel-caption{
+  position: absolute;
+  background-color: rgba($secondary-500, 0.4);
+  padding-left: 10px;
+  padding-right: 10px;
+  bottom:50px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1600px) {
+
+  .carousel-caption {
+    position: absolute;
+    right: (100% - $carousel-caption-width) / 2;
+    bottom: 120px;
+    left: (100% - $carousel-caption-width) / 2;
+    background-color: rgba($secondary-500, 0.4);
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $carousel-caption-color;
+    text-align: center;
+  }
+  .carousel-indicators {
+    bottom:80px;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .carousel-caption {
+    position: absolute;
+    right: (100% - $carousel-caption-width) / 2;
+    bottom: 60px;
+    left: (100% - $carousel-caption-width) / 2;
+    z-index: 10;
+    background-color: rgba($secondary-500, 0.4);
+    padding: 20px;
+    color: $carousel-caption-color;
+    text-align: center;
+  }
+}
+
+
+
 
 //NAVIGATION
 
