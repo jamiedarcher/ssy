@@ -11060,6 +11060,8 @@ h3 a, h4 a {
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #fff;
     text-align: center; }
   .carousel-indicators {
@@ -11073,7 +11075,8 @@ h3 a, h4 a {
     left: 15%;
     z-index: 10;
     background-color: rgba(128, 76, 23, 0.4);
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #fff;
     text-align: center; } }
 

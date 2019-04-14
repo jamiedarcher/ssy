@@ -134,6 +134,8 @@ h3 a, h4 a,{
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right:20px;
     color: $carousel-caption-color;
     text-align: center;
   }
@@ -150,7 +152,8 @@ h3 a, h4 a,{
     left: (100% - $carousel-caption-width) / 2;
     z-index: 10;
     background-color: rgba($secondary-500, 0.4);
-    padding: 20px;
+    padding-left: 20px;
+    padding-right:20px;
     color: $carousel-caption-color;
     text-align: center;
   }
