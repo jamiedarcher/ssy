@@ -16,7 +16,7 @@ $bioImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 <?php
-	echo '<header class="bio-header alignfull" style="background-image:url('.$bioImg[0].')">';
+	echo '<header class="bio-header img-header alignfull" style="background-image:url('.$bioImg[0].')">';
 ?>
 
 
