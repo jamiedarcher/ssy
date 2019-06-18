@@ -11362,6 +11362,9 @@ article.page {
 .page-about-us header.entry-header, .page-about-us header.bio-header, .teacher_bio-cadia-belante header.entry-header, .teacher_bio-cadia-belante header.bio-header, .teacher_bio-mickey-space header.entry-header, .teacher_bio-mickey-space header.bio-header, .teacher_bio-lauren-hull header.entry-header, .teacher_bio-lauren-hull header.bio-header {
   background-position: top; }
 
+.teacher_bio-lauren-hull header.entry-header, .teacher_bio-lauren-hull header.bio-header {
+  background-position: bottom; }
+
 .healcode .class_show {
   margin: 10px 0 20px; }
   .healcode .class_show h1, .healcode .class_show .class_name {
